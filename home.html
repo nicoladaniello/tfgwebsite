@@ -7,13 +7,11 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>TFG London</title>
-    <link href="/static/css/2.9bd960b0.chunk.css" rel="stylesheet" />
-    <link href="/static/css/main.5c90c64b.chunk.css" rel="stylesheet" />
+      content="The Foschini Group Website"
+    />    <title>TFG London</title>
+    <link href="/static/css/swiper.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/static/css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -136,7 +134,7 @@
                           alt="TFG Brands"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-brands.png?auto=format%2Ccompress&amp;bluhash=30905cd4571c5286723fcc21a093ff10&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=d522ae9574bd7b064f3a64304736f666"
                         />
-                        <h4 class="mb-0">5</h4>
+                        <h4 class="countUp mb-0" data-count-last="5">5</h4>
                         <h6>Brands</h6>
                       </div>
                     </div>
@@ -148,7 +146,7 @@
                           alt="TFG Employees"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-employees.png?auto=format%2Ccompress&amp;bluhash=55aaa5800bd34eda2eee4163aaf66903&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=634e267cfbc843d7b829284c0b7ef969"
                         />
-                        <h4 class="mb-0">10,000</h4>
+                        <h4 class="countUp mb-0" data-count-last="10000">10,000</h4>
                         <h6>Employees</h6>
                       </div>
                     </div>
@@ -159,7 +157,7 @@
                           alt="TFG Countries"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-customers.png?auto=format%2Ccompress&amp;bluhash=621ceed834653cfa0945f92c7cc03148&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=32d8eff0d2a0abb8226afd7e12a8a8b6"
                         />
-                        <h4 class="mb-0">24</h4>
+                        <h4 class="countUp mb-0" data-count-last="24">24</h4>
                         <h6>Countries</h6>
                       </div>
                     </div>
@@ -320,22 +318,16 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script
+      src="/static/js/jquery.countUp.js"></script>
     <script>
-      var mySwiper = new Swiper(".swiper-container", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 30
-      });
+      $('.countUp').each(function() {
+        var last = $(this).data( "count-last" );
+        $this.countUp({
+          last: last,
+          duration: 1000
+        });
+      })
     </script>
   </body>
 </html>
