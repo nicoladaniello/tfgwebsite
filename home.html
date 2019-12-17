@@ -320,7 +320,6 @@
       $(document).ready(function() {
         // Detect if element is into view
         function isIntoView(elem, offset) {
-          console.log($(elem), $(elem).offset().top);
           offset = offset || 0;
           var docViewTop = $(window).scrollTop();
           var docViewBottom = docViewTop + $(window).height() - offset;
@@ -334,15 +333,22 @@
             var counterElem = $(this);
             var countUpTo = counterElem.data("countup-to");
 
+            console.log(
+              "isIntoView: " + isIntoView(counterElem, 1000),
+              "countUpTo: " + countUpTo
+            );
             if (
               isIntoView(counterElem, 1000) &&
               countUpTo !== undefined &&
               countUpTo > 0
             ) {
+              console.log("yes");
               counterElem.countUp({
                 last: countUpTo,
                 duration: 1000
               });
+            } else {
+              console.log("no");
             }
           });
         });
