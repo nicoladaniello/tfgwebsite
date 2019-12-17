@@ -317,31 +317,34 @@
     ></script>
     <script src="/static/js/jquery.countUp.js"></script>
     <script>
-      // Detect if element is into view
-      function isIntoView(elem, offset) {
-        offset = offset || 0;
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height() - offset;
-        var elemTop = $(elem).offset().top;
-        return elemTop <= docViewBottom && elemTop >= docViewTop;
-      }
+      $(document).ready(function() {
+        // Detect if element is into view
+        function isIntoView(elem, offset) {
+          console.log(elem, offset);
+          offset = offset || 0;
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height() - offset;
+          var elemTop = $(elem).offset().top;
+          return elemTop <= docViewBottom && elemTop >= docViewTop;
+        }
 
-      // For each element animate when into view
-      $(window).scroll(function() {
-        $(".countUp").each(function() {
-          var counterElem = $(this);
-          var countUpTo = counterElem.data("countup-to");
+        // Animate counters when into view
+        $(window).scroll(function() {
+          $(".countUp").each(function() {
+            var counterElem = $(this);
+            var countUpTo = counterElem.data("countup-to");
 
-          if (
-            isIntoView(counterElem, 1000) &&
-            countUpTo !== undefined &&
-            countUpTo > 0
-          ) {
-            counterElem.countUp({
-              last: countUpTo,
-              duration: 1000
-            });
-          }
+            if (
+              isIntoView(counterElem, 1000) &&
+              countUpTo !== undefined &&
+              countUpTo > 0
+            ) {
+              counterElem.countUp({
+                last: countUpTo,
+                duration: 1000
+              });
+            }
+          });
         });
       });
     </script>
