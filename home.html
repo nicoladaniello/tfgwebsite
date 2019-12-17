@@ -5,10 +5,8 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="The Foschini Group Website"
-    />    <title>TFG London</title>
+    <meta name="description" content="The Foschini Group Website" />
+    <title>TFG London</title>
     <link href="/static/css/swiper.css" rel="stylesheet" />
     <link href="/static/css/bootstrap.css" rel="stylesheet" />
     <link href="/static/css/styles.css" rel="stylesheet" />
@@ -26,16 +24,14 @@
           /></a>
           <div class="drawer navbar-collapse collapse" id="main-navbar">
             <div class="mx-auto navbar-nav">
-              <a
-                href="/"
-                class="d-lg-none nav-link"
+              <a href="/" class="d-lg-none nav-link"
                 ><img
                   width="64px"
                   class="img-fluid"
                   alt="TFG London"
                   src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/TFG-logo.png?auto=format%2Ccompress&amp;bluhash=1a2fadd546a8d2b0c8c9a938d37d8c88&amp;w=177&amp;h=396&amp;fit=fillmax&amp;fill=solid&amp;s=dcc7a8831f73a1777f16b7aaa5b0199e"/></a
               ><a
-                href="/""
+                href="/"
                 class="text-capitalize link-under nav-link"
                 role="button"
                 ><span class="link-under-line">about us</span></a
@@ -133,7 +129,7 @@
                           alt="TFG Brands"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-brands.png?auto=format%2Ccompress&amp;bluhash=30905cd4571c5286723fcc21a093ff10&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=d522ae9574bd7b064f3a64304736f666"
                         />
-                        <h4 class="countUp mb-0" data-counter-time="5" data-counter-delay="10">5</h4>
+                        <h4 class="countUp mb-0" data-countup-to="5">5</h4>
                         <h6>Brands</h6>
                       </div>
                     </div>
@@ -145,7 +141,9 @@
                           alt="TFG Employees"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-employees.png?auto=format%2Ccompress&amp;bluhash=55aaa5800bd34eda2eee4163aaf66903&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=634e267cfbc843d7b829284c0b7ef969"
                         />
-                        <h4 class="countUp mb-0" data-count-time="10000" data-counter-delay="10">10,000</h4>
+                        <h4 class="countUp mb-0" data-countup-to="10000">
+                          10,000
+                        </h4>
                         <h6>Employees</h6>
                       </div>
                     </div>
@@ -156,7 +154,7 @@
                           alt="TFG Countries"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-customers.png?auto=format%2Ccompress&amp;bluhash=621ceed834653cfa0945f92c7cc03148&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=32d8eff0d2a0abb8226afd7e12a8a8b6"
                         />
-                        <h4 class="countUp mb-0" data-count-time="24" data-counter-delay="10">24</h4>
+                        <h4 class="countUp mb-0" data-countup-to="24">24</h4>
                         <h6>Countries</h6>
                       </div>
                     </div>
@@ -317,10 +315,30 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="/static/js/jquery.countUp.js"></script>
+    <script src="/static/js/jquery.countUp.js"></script>
     <script>
-      $('.countUp').countUp();
+      // Detect if element is into view
+      function isIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        return elemTop <= docViewBottom && elemTop >= docViewTop;
+      }
+
+      // For each element animate when into view
+      $(window).scroll(function() {
+        $(".countUp").each(function() {
+          var counterElem = $(this);
+          var countUpTo = counterElem.data("countup-to");
+
+          if (isIntoView(elem) && countUpTo !== undefined && countUpTo > 0) {
+            counterElem.countUp({
+              last: countUpTo,
+              duration: 1000
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>
