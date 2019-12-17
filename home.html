@@ -28,7 +28,6 @@
             <div class="mx-auto navbar-nav">
               <a
                 href="/"
-                data-rb-event-key="#home"
                 class="d-lg-none nav-link"
                 ><img
                   width="64px"
@@ -134,7 +133,7 @@
                           alt="TFG Brands"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-brands.png?auto=format%2Ccompress&amp;bluhash=30905cd4571c5286723fcc21a093ff10&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=d522ae9574bd7b064f3a64304736f666"
                         />
-                        <h4 class="countUp mb-0" data-count-last="5">5</h4>
+                        <h4 class="countUp mb-0" data-counter-time="5" data-counter-delay="10">5</h4>
                         <h6>Brands</h6>
                       </div>
                     </div>
@@ -146,7 +145,7 @@
                           alt="TFG Employees"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-employees.png?auto=format%2Ccompress&amp;bluhash=55aaa5800bd34eda2eee4163aaf66903&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=634e267cfbc843d7b829284c0b7ef969"
                         />
-                        <h4 class="countUp mb-0" data-count-last="10000">10,000</h4>
+                        <h4 class="countUp mb-0" data-count-time="10000" data-counter-delay="10">10,000</h4>
                         <h6>Employees</h6>
                       </div>
                     </div>
@@ -157,7 +156,7 @@
                           alt="TFG Countries"
                           src="https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/icon-customers.png?auto=format%2Ccompress&amp;bluhash=621ceed834653cfa0945f92c7cc03148&amp;w=201&amp;h=249&amp;fit=fillmax&amp;fill=solid&amp;s=32d8eff0d2a0abb8226afd7e12a8a8b6"
                         />
-                        <h4 class="countUp mb-0" data-count-last="24">24</h4>
+                        <h4 class="countUp mb-0" data-count-time="24" data-counter-delay="10">24</h4>
                         <h6>Countries</h6>
                       </div>
                     </div>
@@ -321,13 +320,7 @@
     <script
       src="/static/js/jquery.countUp.js"></script>
     <script>
-      $('.countUp').each(function() {
-        var last = $(this).data( "count-last" );
-        $(this).countUp({
-          last: last,
-          duration: 1000
-        });
-      })
+      $('.countUp').countUp();
     </script>
   </body>
 </html>
