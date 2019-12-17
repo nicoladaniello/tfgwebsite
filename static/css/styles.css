@@ -263,11 +263,14 @@ CUSTOM CODE
       padding: 10% 0 0;
     }
   }
+  a:hover {
+    text-decoration: none;
+  }
   a.img-link {
     display: block;
     position: relative;
   }
-  a.img-link:before {
+  /* a.img-link:before {
     content: "";
     top: 0;
     left: 0;
@@ -298,7 +301,26 @@ CUSTOM CODE
     opacity: 0.5;
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
+  } */
+
+  .img-link img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
   }
+  .img-link:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+
+
+
+
+
+
+
   a.link-under > .link-under-line {
     position: relative;
   }
