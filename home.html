@@ -320,7 +320,7 @@
       $(document).ready(function() {
         // Detect if element is into view
         function isIntoView(elem, offset) {
-          console.log(elem, offset);
+          console.log($(elem), $(elem).offset().top);
           offset = offset || 0;
           var docViewTop = $(window).scrollTop();
           var docViewBottom = docViewTop + $(window).height() - offset;
