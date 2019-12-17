@@ -333,6 +333,20 @@ CUSTOM CODE
       opacity: 1;
     }
   }
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    to {
+      display: block;
+      opacity: 1;
+    }
+  }
   .swiper-container {
     display: flex;
     padding-bottom: 3rem;

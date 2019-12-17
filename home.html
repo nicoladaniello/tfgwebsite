@@ -331,7 +331,7 @@
           var counterElem = $(this);
           var countUpTo = counterElem.data("countup-to");
 
-          if (isIntoView(elem) && countUpTo !== undefined && countUpTo > 0) {
+          if (isIntoView(counterElem) && countUpTo !== undefined && countUpTo > 0) {
             counterElem.countUp({
               last: countUpTo,
               duration: 1000
