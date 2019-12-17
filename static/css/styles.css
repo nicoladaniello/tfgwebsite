@@ -263,46 +263,16 @@ CUSTOM CODE
       padding: 10% 0 0;
     }
   }
+
+
   a:hover {
     text-decoration: none;
   }
   a.img-link {
     display: block;
     position: relative;
+    overflow: hidden;
   }
-  /* a.img-link:before {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #fff;
-  }
-  a.img-link:after,
-  a.img-link:before {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  a.img-link:after {
-    content: url(https://damselinadress.files.blucommerce.com/damselinadress/webImages/TFG/link-chain.svg);
-    top: 40%;
-    left: 40%;
-    width: 20%;
-    height: 20%;
-  }
-  a.img-link:focus:before,
-  a.img-link:hover:before {
-    opacity: 0.4;
-  }
-  a.img-link:focus:after,
-  a.img-link:hover:after {
-    opacity: 0.5;
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
-  } */
-
   .img-link img {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -313,12 +283,6 @@ CUSTOM CODE
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
-
-
-
-
-
-
 
 
   a.link-under > .link-under-line {
