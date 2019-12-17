@@ -333,22 +333,16 @@
             var counterElem = $(this);
             var countUpTo = counterElem.data("countup-to");
 
-            console.log(
-              "isIntoView: " + isIntoView(counterElem, 1000),
-              "countUpTo: " + countUpTo
-            );
             if (
-              isIntoView(counterElem, 10) &&
+              isIntoView(counterElem, 100) &&
               countUpTo !== undefined &&
               countUpTo > 0
             ) {
-              console.log("yes");
               counterElem.countUp({
                 last: countUpTo,
                 duration: 1000
               });
-            } else {
-              console.log("no");
+              counterElem.removeClass("countUp")
             }
           });
         });
