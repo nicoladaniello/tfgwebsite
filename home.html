@@ -318,9 +318,10 @@
     <script src="/static/js/jquery.countUp.js"></script>
     <script>
       // Detect if element is into view
-      function isIntoView(elem) {
+      function isIntoView(elem, offset) {
+        offset = offset || 0;
         var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
+        var docViewBottom = docViewTop + $(window).height() - offset;
         var elemTop = $(elem).offset().top;
         return elemTop <= docViewBottom && elemTop >= docViewTop;
       }
@@ -331,7 +332,11 @@
           var counterElem = $(this);
           var countUpTo = counterElem.data("countup-to");
 
-          if (isIntoView(counterElem) && countUpTo !== undefined && countUpTo > 0) {
+          if (
+            isIntoView(counterElem, 1000) &&
+            countUpTo !== undefined &&
+            countUpTo > 0
+          ) {
             counterElem.countUp({
               last: countUpTo,
               duration: 1000
