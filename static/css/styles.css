@@ -378,7 +378,7 @@ CUSTOM CODE
   .swiper-button-prev {
     left: -1px;
     background-position-x: 10%;
-    background-image: url(https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/brands/p8/chevron-left.jpg?auto=format%2Ccompress&bluhash=30868aa23b40151588e69ae80f8465ff&fill=solid&fit=fillmax&h=66&s=50eddecc51ab52d9f444ecb8c6fa1039&w=35);
+    background-image: url(/images/icons/chevron-left.jpg);
   }
   .swiper-button-prev:hover {
     background-position-x: 0;
@@ -386,7 +386,7 @@ CUSTOM CODE
   .swiper-button-next {
     right: -1px;
     background-position-x: 90%;
-    background-image: url(https://damselinadress.images.blucommerce.com/damselinadress/webImages/TFG/brands/p8/chevron-right.jpg?auto=format%2Ccompress&bluhash=f04597184ff54fc704e4f10ea3ba0408&fill=solid&fit=fillmax&h=66&s=93b9628edd01fd2c661cd1c7a7ac6799&w=35);
+    background-image: url(/images/icons/chevron-right.jpg);
   }
   .swiper-button-next:hover {
     background-position-x: 100%;
