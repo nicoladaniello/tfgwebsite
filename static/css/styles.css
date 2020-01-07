@@ -3,6 +3,15 @@
 CUSTOM CODE
 
 */
+..bg-dark,
+a.bg-dark:focus,
+a.bg-dark:hover,
+button.bg-dark:focus,
+button.bg-dark:hover {
+  background-color: #535d62 !important;
+}
+
+
 .hamburger {
   font: inherit;
   display: inline-block;
@@ -131,7 +140,7 @@ CUSTOM CODE
   -webkit-transform: translate3d(0, 10px, 0) rotate(-45deg);
   transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
-#navbar .navbar-brand {
+/* #navbar .navbar-brand {
   padding: 0 !important;
   position: absolute;
   top: 0;
@@ -146,7 +155,7 @@ CUSTOM CODE
     width: 6vw;
     max-width: 120px;
   }
-}
+} */
 #navbar .navbar-toggler {
   border: none;
   height: 64px;
