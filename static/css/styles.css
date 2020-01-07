@@ -3,6 +3,24 @@
 CUSTOM CODE
 
 */
+
+html,
+body {
+  color: #535d62;
+}
+
+.card {
+  border: none;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 .bg-dark,
 a.bg-dark:focus,
 a.bg-dark:hover,
@@ -10,7 +28,6 @@ button.bg-dark:focus,
 button.bg-dark:hover {
   background-color: #535d62 !important;
 }
-
 
 .hamburger {
   font: inherit;
