@@ -1,0 +1,480 @@
+<style>
+  .p8-style .hero {
+    font-size: calc(10px + 1vw);
+  }
+
+  @media screen and (min-width: 769px) {
+    .p8-style .hero {
+      font-size: 1.3vw;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .p8-style .hero {
+      font-size: 26px;
+    }
+  }
+
+  .btn-sale-white {
+    background-color: #fff;
+    color: #c0083b;
+    border: 2px solid #c0083b;
+    height: auto;
+  }
+  .btn-sale-white:hover,
+  .btn-sale-white:focus {
+    background-color: #c0083b;
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  @media screen and (max-width: 768px) {
+    .btn-sale-white {
+      border: 2px solid #fff;
+    }
+    .btn-sale-white:hover,
+    .btn-sale-white:focus {
+      background-color: #fff !important;
+      color: #c0083b !important;
+    }
+  }
+
+  .btn-sale {
+    background-color: #c0083b;
+    color: #fff;
+    border: 2px solid #c0083b;
+    height: auto;
+  }
+  .btn-sale:hover,
+  .btn-sale:focus {
+    background-color: #fff;
+    color: #c0083b !important;
+    border-color: #c0083b !important;
+  }
+
+  .text-sale {
+    color: #c0083b;
+  }
+  .bg-sale {
+    background-color: #c0083b;
+  }
+
+  .card-body.bg-sale.hovered:hover {
+    background-color: #a70732;
+  }
+
+  .off70 {
+    font-size: 10em;
+    font-weight: 300;
+  }
+  @media screen and (min-width: 769px) {
+    .off70 {
+      font-size: 8em;
+    }
+  }
+</style>
+
+<div class="p8-style p-0 container-fluid">
+  <div class="justify-content-center row no-gutters">
+    <!-- Hero -->
+    <div class="section mb-2 mb-md-5 col-12">
+      <div class="text-center text-white card hero border-0">
+        <picture class="text-center"
+          ><source
+            media="(max-width: 768px)"
+            srcset="images/2019/home/12/wk47/ess/m-hero.jpg?$staticlink$"/>
+          <img
+            class="img-fluid"
+            alt="Sale Preview"
+            src="images/2019/home/12/wk47/ess/hero.jpg?$staticlink$"
+        /></picture>
+        <div class="card-img-overlay">
+          <div class="d-flex h-100 align-items-center justify-content-center">
+            <div class="row align-items-center justify-content-center">
+              <!-- Further Reductions -->
+              <div class="col-12 col-md-auto text-uppercase">
+                <h3 class="d-none d-md-block mb-0">
+                  Further Reductions
+                </h3>
+                <h5 class="d-md-none" style="letter-spacing: 0.07em;">
+                  Further Reductions
+                </h5>
+                <h2
+                  class="d-none d-md-block font-weight-light"
+                  style="font-size: 3.1em;"
+                >
+                  Winter Sale
+                </h2>
+              </div>
+              <!-- Separee -->
+              <div
+                class="col-auto align-self-stretch d-none d-md-flex align-items-center"
+              >
+                <div class="h-75" style="border-right: 2px solid #fff;"></div>
+              </div>
+              <!-- Up to 70% off -->
+              <div class="col-auto">
+                <div class="position-static text-uppercase col-auto">
+                  <p class="font-weight-light text-left mb-0 ml-1">
+                    Up to
+                  </p>
+                  <div class="d-flex mb-3 mb-md-4 off70">
+                    <div
+                      class="col-auto p-0"
+                      style="line-height: 0.8em;margin-left: -10px"
+                    >
+                      70
+                    </div>
+                    <div class="col-auto p-0" style="font-size: 0.5em;">
+                      <span class="d-block" style="line-height: 1em;">%</span
+                      ><span class="d-block" style="font-size: 0.4em;"
+                        >OFF</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="d-md-none">
+                  <p class="mb-2 mt-4">
+                    <a
+                      class="stretched-link btn btn-block btn-sale-white btn-sm py-xl-2"
+                      href="$httpUrl('Search-Show', 'cgid', 'sale')$"
+                      title="Shop Sale up to 70% off"
+                    >
+                      Shop Now
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- CTA -->
+              <div class=" position-static d-none d-md-block col-12 mt-2">
+                <p class="mb-2">
+                  <a
+                    class="stretched-link btn btn-block btn-sale-white btn-sm py-xl-2 mx-auto"
+                    style="width: 33%"
+                    href="$httpUrl('Search-Show', 'cgid', 'sale')$"
+                    title="Shop Sale up to 70% off"
+                  >
+                    Shop Now
+                  </a>
+                </p>
+              </div>
+
+              <p
+                class="position-absolute p-1"
+                style="font-size: 0.6em; text-transform: none; right: 4px; bottom: 0px;"
+              >
+                T&amp;Cs Apply
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTAs - Mobile Only -->
+    <div class="section d-md-none col-xl-9 col-md-11">
+      <div class="container-fluid px-md-0">
+        <div class="row">
+          <div class="col-12">
+            <a
+              class="btn btn-sale btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-35')$"
+              >£35 & UNDER</a
+            >
+          </div>
+          <div class="col-12">
+            <a
+              class="btn btn-sale btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-50')$"
+              >£50 & UNDER</a
+            >
+          </div>
+          <div class="col-12">
+            <a
+              class="btn btn-sale btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-75')$"
+              >£75 & UNDER</a
+            >
+          </div>
+          <div class="col-12">
+            <a
+              class="btn btn-sale btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-100')$"
+              >£100 & UNDER</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="p8-style p-0 container-fluid">
+  <div class="justify-content-center row no-gutters">
+    <div class="section d-none d-md-block mb-3 mb-xl-5 col-xl-9 col-md-11">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="border-0 text-white text-center text-uppercase card">
+            <picture class="text-center"
+              ><img
+                class="img-fluid"
+                alt="Sale Dresses"
+                src="images/2019/home/12/wk44/ess/further/dresses.jpg?$staticlink$"
+            /></picture>
+            <div class="card-body" style="background-color: rgb(195, 0, 40);">
+              <a
+                class="stretched-link text-white"
+                href="$httpUrl('Search-Show', 'cgid', 'sale-dresses')$"
+                title="Sale Dresses"
+                >Sale Dresses</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="border-0 text-white text-center text-uppercase card">
+            <picture class="text-center"
+              ><img
+                class="img-fluid"
+                alt="Sale Knitwear"
+                src="images/2019/home/12/wk44/ess/further/knitwear.jpg?$staticlink$"
+            /></picture>
+            <div class="card-body" style="background-color: rgb(195, 0, 40);">
+              <a
+                class="stretched-link text-white"
+                href="$httpUrl('Search-Show', 'cgid', 'sale-knitwear')$"
+                title="Sale Knitwear"
+                >Sale Knitwear</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section d-none d-md-block mb-3 mb-xl-5 col-xl-9 col-md-11">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="border-0 text-center card">
+            <picture class="text-center"
+              ><img
+                class="img-fluid"
+                alt="Partywear"
+                src="images/2019/home/12/wk44/ess/launch/partywear2.jpg?$staticlink$"
+            /></picture>
+            <div class="card-body">
+              <h5>By invitation only</h5>
+              <a
+                class="stretched-link text-uppercase"
+                href="$httpUrl('Search-Show', 'cgid', 'partywear')$"
+                title="Shop Partywear"
+                ><span class="lined-link">Shop Partywear</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border-0 text-center card">
+            <picture class="text-center"
+              ><img
+                class="img-fluid"
+                alt="Cashmere &amp; Wool"
+                src="images/2019/home/12/wk44/ess/launch/cashmere.jpg?$staticlink$"
+            /></picture>
+            <div class="card-body">
+              <h5>The gift of luxury</h5>
+              <a
+                class="stretched-link text-uppercase"
+                href="$httpUrl('Search-Show', 'cgid', 'Cashmere-Wool')$"
+                title="Shop Cashere and Wool"
+                ><span class="lined-link">Cashmere &amp; Wool</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border-0 text-center card">
+            <picture class="text-center"
+              ><img
+                class="img-fluid"
+                alt="Stocking Fillers"
+                src="images/2019/home/12/wk44/ess/launch/stocking.jpg?$staticlink$"
+            /></picture>
+            <div class="card-body">
+              <h5>It's the small things that count</h5>
+              <a
+                class="stretched-link text-uppercase"
+                href="$httpUrl('Search-Show', 'cgid', 'stocking-fillers')$"
+                title="Shop Stocking Fillers"
+                ><span class="lined-link">Stocking Fillers</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="section d-md-none col-xl-9 col-md-11">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-dresses')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale Dresses</a
+            >
+          </div>
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-knitwear')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale Knitwear</a
+            >
+          </div>
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-tops')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale tops</a
+            >
+          </div>
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'sale-trousers')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale trousers</a
+            >
+          </div>
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'jackets-coats')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale coats</a
+            >
+          </div>
+          <div class="px-1 col-6">
+            <a
+              class="btn text-white btn-block py-3 mb-2"
+              href="$httpUrl('Search-Show', 'cgid', 'shop-by-size')$"
+              title=""
+              style="height: auto; background-color: rgb(195, 0, 40);"
+              >Sale by Size</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="section mb-3 mb-xl-5 col-12">
+      <div class="border-0 text-center card">
+        <picture class="text-center"
+          ><source
+            media="(max-width: 768px)"
+            srcset="images/2019/home/12/wk44/ess/launch/m-new.jpg?$staticlink$"/>
+          <img
+            class="img-fluid"
+            alt="Latest Pieces"
+            src="images/2019/home/12/wk44/ess/launch/new.jpg?$staticlink$"
+        /></picture>
+        <div class="d-none d-md-flex text-white card-img-overlay">
+          <div class="d-flex w-100 align-items-center justify-content-center">
+            <div class="position-static">
+              <h2 class="text-uppercase">What's New?</h2>
+              <p>
+                Our latest must-have pieces for all your looks in bold colours
+                and prints
+              </p>
+              <a
+                class="stretched-link btn btn-white text-uppercase border-0 px-4"
+                href="$httpUrl('Search-Show', 'cgid', 'new')$"
+                title="Shop New In This Week"
+                >Shop the Styles</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="d-md-none card-body">
+          <h2 class="h3 text-uppercase">What's New?</h2>
+          <p class="mb-0">
+            Our latest must-have pieces for all<br />your looks in bold colours
+            and prints
+          </p>
+          <a
+            class="stretched-link btn btn-white text-uppercase border-0"
+            href="$httpUrl('Search-Show', 'cgid', 'new')$"
+            title="Shop New In This Week"
+            ><span class="lined-link">Shop the Styles</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Social block -->
+    <div class="col-11 p-0 d-none d-md-block">
+      <div class="card border-0 social-card mb-3 mb-lg-5">
+        <div class="card-body" style="background-color: #f3f3f3;">
+          <p class="h1 mb-2 text-gold">
+            <i
+              class="font-icon icon-fa-instagram fa"
+              aria-hidden="true"
+              style="font-size: inherit;"
+            ></i>
+          </p>
+          <h5>
+            Want some style inspiration, style tips and an exclusive peek behind
+            the scenes?
+          </h5>
+          <p>
+            Follow us <b>@phaseeight</b> on Instagram and you won't miss
+            anything!
+          </p>
+        </div>
+        <div
+          class="justify-content-center d-none d-md-flex"
+          style="background: linear-gradient(#f3f3f3 50%, #fff 50%);"
+        >
+          <div class="col-3 col-lg-auto">
+            <a
+              title="@southerlybower"
+              href="$httpUrl('Product-Show', 'pid', '950493351')$"
+            >
+              <img
+                class="img-fluid"
+                alt="@southerlybower"
+                src="images/2019/landing_page/black-friday/wk39/social1.jpg?$staticlink$"
+              />
+            </a>
+          </div>
+          <div class="col-3 col-lg-auto">
+            <a
+              title="@southerlybower"
+              href="$httpUrl('Product-Show', 'pid', '900957050')$"
+            >
+              <img
+                class="img-fluid"
+                alt=""
+                src="images/2019/landing_page/black-friday/wk39/social2.jpg?$staticlink$"
+              />
+            </a>
+          </div>
+          <div class="col-3 col-lg-auto">
+            <a
+              title="@southerlybower"
+              href="$httpUrl('Product-Show', 'pid', '950479827')$"
+            >
+              <img
+                class="img-fluid"
+                alt=""
+                src="images/2019/landing_page/black-friday/wk39/social3.jpg?$staticlink$"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
