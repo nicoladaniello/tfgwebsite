@@ -27,7 +27,7 @@ body {
 }
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #535d62 !important;
+  color: #666f74 !important;
 }
 
 .text-secondary {
@@ -35,7 +35,7 @@ a.text-primary:hover {
 }
 a.text-secondary:focus,
 a.text-secondary:hover {
-  color: #dad9d7 !important;
+  color: #c2bdb4 !important;
 }
 
 .bg-dark,
