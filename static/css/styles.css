@@ -23,11 +23,19 @@ body {
 }
 
 .text-primary {
-  color: #dad9d7 !important;
+  color: #535d62 !important;
 }
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #c0c0bf !important;
+  color: #535d62 !important;
+}
+
+.text-secondary {
+  color: #dad9d7 !important;
+}
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: #dad9d7 !important;
 }
 
 .bg-dark,
