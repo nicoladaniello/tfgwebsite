@@ -207,6 +207,10 @@ button.bg-dark:hover {
   font-weight: 600;
   font-size: 1.2rem;
   padding: 2rem 1.4rem;
+  color: #535d62;
+}
+#navbar .navbar-nav .nav-link:hover {
+  color: #666f74;
 }
 @media (max-width: 991.98px) {
   #navbar .navbar-nav .nav-link {
@@ -348,7 +352,7 @@ a.link-under > .link-under-line:before {
   transition: all 0.3s ease-in-out 0s;
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-  background-color: #000;
+  background-color: #535d62;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -358,6 +362,7 @@ a.link-under:hover > .link-under-line:before {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
+  background-color: #666f74;
 }
 /*
   * Opposite effect for navbar links
