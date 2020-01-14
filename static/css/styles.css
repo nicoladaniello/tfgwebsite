@@ -335,7 +335,7 @@ a.link-under.active,
 a.link-under:hover,
 a.link-under:focus {
   opacity: 1 !important;
-  color: inherit !important;
+  /* color: inherit !important; */
   outline: none;
 }
 a.link-under > .link-under-line {
