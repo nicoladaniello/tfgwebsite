@@ -10,7 +10,7 @@
   font-family: "Proxima Nova";
   src: url("/static/fonts/proxima-nova/proxima_nova_thin-webfont.woff2") format("woff2"),
     url("/static/fonts/proxima-nova/proxima_nova_thin-webfont.woff") format("woff");
-  font-weight: lighter;
+  font-weight: 100;
   font-style: normal;
 }
 
