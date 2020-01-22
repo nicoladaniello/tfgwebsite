@@ -2,14 +2,14 @@
   CUSTOM STYLES
 */
 @import "/static/css/fonts.css";
+@import "/static/css/bootstrap.css";
+@import "/static/css/swiper.css";
 
 html,
 body {
   color: #535d62;
   scroll-behavior: smooth;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Proxima Nova", sans-serif;
 }
 
 .card {
