@@ -2,16 +2,14 @@
   CUSTOM STYLES
 */
 @import "/static/css/fonts.css";
-
-html,
-body {
-  color: #535d62;
-  scroll-behavior: smooth;
-  font-family: "Proxima Nova", sans-serif;
-}
-
 @import "/static/css/bootstrap.css";
 @import "/static/css/swiper.css";
+
+html {
+  color: #535d62;
+  scroll-behavior: smooth;
+  font-family: "Proxima Nova", sans-serif !important;
+}
 
 .card {
   border: none;
