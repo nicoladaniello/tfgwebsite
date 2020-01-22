@@ -5,7 +5,8 @@
 @import "/static/css/bootstrap.css";
 @import "/static/css/swiper.css";
 
-html {
+html,
+body {
   color: #535d62;
   scroll-behavior: smooth;
   font-family: "Proxima Nova", sans-serif;
