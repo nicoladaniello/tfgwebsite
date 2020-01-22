@@ -2,8 +2,6 @@
   CUSTOM STYLES
 */
 @import "/static/css/fonts.css";
-@import "/static/css/bootstrap.css";
-@import "/static/css/swiper.css";
 
 html,
 body {
@@ -11,6 +9,9 @@ body {
   scroll-behavior: smooth;
   font-family: "Proxima Nova", sans-serif;
 }
+
+@import "/static/css/bootstrap.css";
+@import "/static/css/swiper.css";
 
 .card {
   border: none;
